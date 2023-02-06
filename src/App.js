@@ -6,8 +6,9 @@ import { BsSearch } from "react-icons/bs";
 
 //components
 import MovieCard from "./MovieCard";
-
-const API_URL = "https://www.omdbapi.com?apikey=1dd3550f";
+/*  */
+const API_URL = `https://www.omdbapi.com?apikey=${process.env.REACT_APP_API_KEY}`;
+console.log(API_URL);
 
 const App = () => {
   const [movies, setMovies] = useState([]);
